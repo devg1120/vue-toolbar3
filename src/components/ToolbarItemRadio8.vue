@@ -140,24 +140,24 @@ onMounted(() => {
 .underline.radio_start {
   width: 31px;
   height: 4px;
-  margin-top: -13px;
+  margin-top: -12px;
   margin-left: 2px;
-  border-bottom: solid 2px lightgray;
-  border-left: solid 2px lightgray;
+  border-bottom: solid 3px lightgray;
+  border-left: solid 3px lightgray;
 }
 .underline.radio_mid {
   width: 34px;
   height: 4px;
-  margin-top: -13px;
-  border-bottom: solid 2px lightgray;
+  margin-top: -12px;
+  border-bottom: solid 3px lightgray;
 }
 .underline.radio_end {
   width: 33px;
   height: 4px;
-  margin-top: -13px;
+  margin-top: -12px;
   margin-right: 2px;
-  border-bottom: solid 2px lightgray;
-  border-right: solid 2px lightgray;
+  border-bottom: solid 3px lightgray;
+  border-right: solid 3px lightgray;
 }
 
 /*

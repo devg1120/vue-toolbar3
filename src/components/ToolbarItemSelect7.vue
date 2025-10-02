@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref , onMounted, useTemplateRef } from "vue";
+import { ref, onMounted, useTemplateRef } from "vue";
 
 const props = defineProps(["tooltip", "name", "alignright"]);
 

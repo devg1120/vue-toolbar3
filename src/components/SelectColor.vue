@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref  } from "vue";
+import { ref } from "vue";
 import VueSelect from "vue3-select-component";
 
 import { StopIcon } from "./@heroicons/vue/16/solid";

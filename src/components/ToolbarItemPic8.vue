@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, useTemplateRef } from "vue";
-
+/*
 const props = defineProps(["tooltip", "name", "alignright"]);
 
 const emit = defineEmits(["toolbarItemClick", "toolbarItemToggle"]);
@@ -64,6 +64,8 @@ onMounted(() => {
   });
 });
 
+*/
+
 /*
 onMounted(() => {
 });
@@ -71,11 +73,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="item" ref="item" :class="{ alignright: props.alignright }">
+  <div class="item" ref="item" >
     <slot></slot>
-  </div>
-  <div class="tooltip">
-    <div class="tip_message">{{ props.tooltip }}</div>
   </div>
 </template>
 

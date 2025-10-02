@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref,  onMounted } from "vue";
+import { ref, onMounted } from "vue";
 //import VueDatePicker from '@vuepic/vue-datepicker';
 //import '@vuepic/vue-datepicker/dist/main.css'
 import { CalendarIcon } from "./@heroicons/vue/24/outline";
@@ -24,6 +24,7 @@ import { EllipsisHorizontalIcon } from "./@heroicons/vue/24/outline";
 import { DocumentIcon } from "./@heroicons/vue/24/outline";
 
 import ToolbarItem8 from "./ToolbarItem8.vue";
+import ToolbarItemPic8 from "./ToolbarItemPic8.vue";
 import ToolbarItemRadio8 from "./ToolbarItemRadio8.vue";
 import ToolbarItemSelect7 from "./ToolbarItemSelect7.vue";
 
@@ -86,7 +87,7 @@ const radioref = ref(null);
   <div class="toolbar-base">
     <template v-for="item in props.toolbar_define" v-bind:key="item">
       <ToolbarItem8
-        v-if="!item.select && !item.radio"
+        v-if="!item.select && !item.radio && !item.pic "
         :tooltip="item.tooltip"
         :name="item.name"
         :alignright="item.alignright"
@@ -103,6 +104,18 @@ const radioref = ref(null);
           }"
         />
       </ToolbarItem8>
+      <ToolbarItemPic8
+        v-if="!item.select && !item.radio && item.pic "
+        :tooltip="item.tooltip"
+        :name="item.name"
+        :alignright="item.alignright"
+        @toolbarItemClick="click_handler"
+        @toolbarItemToggle="toggle_handler"
+      >
+        <component
+          v-bind:is="item.icon"
+        />
+      </ToolbarItemPic8>
       <ToolbarItemRadio8
         v-if="!item.select && item.radio"
         ref="radioref"
