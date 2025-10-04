@@ -10,7 +10,7 @@
     stroke="lightgray"
     stroke-width="1"
     class="spliter"
-  >
+    >
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M14 0v40 M17 0v40" />
   </svg>
@@ -55,7 +55,10 @@
 </template>
 -->
 <style scoped>
+
 .spliter {
-  color: lightgray;
+ color: lightgray;
+
 }
+
 </style>

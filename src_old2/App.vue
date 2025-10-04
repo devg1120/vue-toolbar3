@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import Toolbar from "./components/Toolbar.vue";
-
+import ToolbarTip8 from "./components/ToolbarTip8.vue";
 import { CalendarIcon } from "@heroicons/vue/24/outline";
 import { TrashIcon } from "@heroicons/vue/24/outline";
 import { XMarkIcon } from "@heroicons/vue/24/outline";
@@ -17,6 +16,7 @@ import { ArrowUturnLeftIcon } from "@heroicons/vue/24/outline";
 import { ArrowsPointingOutIcon } from "@heroicons/vue/24/outline";
 import { ArrowsPointingInIcon } from "@heroicons/vue/24/outline";
 import { Cog6ToothIcon } from "@heroicons/vue/24/outline";
+
 import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline";
 import { EllipsisHorizontalIcon } from "@heroicons/vue/24/outline";
 import { DocumentIcon } from "@heroicons/vue/24/outline";
@@ -30,7 +30,30 @@ import { IconHome } from "@tabler/icons-vue";
 import { IconMoodSmileBeam } from "@tabler/icons-vue";
 //tallymark-1
 import { IconTallymark1 } from "@tabler/icons-vue";
-import Spliter from "./components/Spliter.vue";
+import  Spliter  from "./components/Spliter.vue";
+
+/*
+<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-minus-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5v14" /></svg>
+*/
+
+/*
+function clickA( data ) {
+
+   console.log("*************** Click A:", data);
+   //alert("Click A");
+}
+
+function clickB( data ) {
+
+   console.log("*************** Click B:", data);
+   //alert("Click B");
+}
+
+const handler_define = [
+  "clickA",
+  "clickB",
+];
+*/
 
 const toolbar_define = [
   {
@@ -273,8 +296,8 @@ function toolbarItemRadio(radio_name, radio_index, name, state) {
 
 <template>
   <div>
-    <p>"Toolbar" radio button</p>
-    <Toolbar
+    <p>"ToolbarTip8" radio button</p>
+    <ToolbarTip8
       :toolbar_define="toolbar_define"
       @toolbarItemClick="toolbarItemClick"
       @toolbarItemToggle="toolbarItemToggle"
@@ -283,8 +306,8 @@ function toolbarItemRadio(radio_name, radio_index, name, state) {
     />
   </div>
   <div>
-    <p>"Toolbar" radio button icon_flat</p>
-    <Toolbar
+    <p>"ToolbarTip8" radio button icon_flat</p>
+    <ToolbarTip8
       :toolbar_define="toolbar_define"
       :icon_flat_mode="true"
       @toolbarItemClick="toolbarItemClick"
